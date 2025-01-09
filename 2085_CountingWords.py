@@ -1,0 +1,22 @@
+class Solution(object):
+    def prefixCount(self, words, pref):
+        """
+        :type words: List[str]
+        :type pref: str
+        :rtype: int
+        """
+
+        count = 0
+        for word in words:
+            if word.startswith(pref):
+                count += 1
+        return count
+    
+
+if __name__ == '__main__':
+    words = ["apple", "app", "apricot", "banana", "apocalypse"]
+    pref = "ap"
+
+    solution = Solution()
+
+    print(solution.prefixCount(words, pref))
