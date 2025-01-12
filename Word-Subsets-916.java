@@ -10,10 +10,8 @@ class Solution {
                 maxFreq[c - 'a'] = Math.max(maxFreq[c - 'a'], tempFreq[c - 'a']);
             }
         }
-
-        
+ 
         List<String> result = new ArrayList<>();
-
 
         for (String word : words1) {
             int[] wordFreq = new int[26];

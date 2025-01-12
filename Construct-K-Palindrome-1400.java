@@ -13,12 +13,10 @@ class Solution {
             map.put(c , map.getOrDefault(c , 0) + 1);
         }
 
-        int odd = 0 , even = 0;
+        int odd = 0 ;
 
         for(int val: map.values()){
-            if(val % 2 == 0){
-                even++;
-            } else{
+            if(val % 2 != 0){
                 odd++;
             }
         }
