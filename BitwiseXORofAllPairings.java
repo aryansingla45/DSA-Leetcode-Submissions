@@ -21,4 +21,8 @@ class BitwiseXORofAllPairings {
         return xor;
         
     }
+
+    public static void main(String args[]){
+        
+    }
 }
